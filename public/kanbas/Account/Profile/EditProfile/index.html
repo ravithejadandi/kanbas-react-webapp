@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="../../../styles.css" />
-<link rel="stylesheet" href="../../KanbasNavigation/index.css" />
-<link rel="stylesheet" href="./index.css" />
+<link rel="stylesheet" href="../../../../styles.css" />
+<link rel="stylesheet" href="../../../KanbasNavigation/index.css" />
+<link rel="stylesheet" href="../index.css" />
 <link
   href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
   rel="stylesheet"
@@ -23,10 +23,10 @@
   <div class="wd-flex-row-container">
     <div class="d-none d-md-block">
       <div class="kanbas-navigation">
-        <ul class="wd-kanbas-navigation" style="height: 100%">
+        <ul class="wd-kanbas-navigation">
           <div class="wd-logo-container">
             <a href="#"
-              ><img src="../../../images/NULogo.png" class="wd-logo"
+              ><img src="../../../../images/NULogo.png" class="wd-logo"
             /></a>
           </div>
           <li class="wd-active">
@@ -115,44 +115,90 @@
         </div>
         <div>
           <div class="profile-picture">
-            <i class="fa fa-circle-user fa-6x" style="display: block"></i>
+            <i class="fa fa-circle-user fa-6x"></i>
           </div>
           <div class="profile-info">
-            <div class="d-inline-flex">
-              <h2>Ravitheja Dandi</h2>
-              <form action="/Kanbas/Account/Profile/EditProfile">
-                <button
-                  class="btn edit-button float-end"
-                  style="background: #eeeeee"
+            <form action="/Kanbas/Account/Profile/">
+              <button
+                class="btn float-end"
+                style="margin-left: 800px; background: #eeeeee"
+              >
+                <i class="fa-solid fa-pencil"></i>Cancel Editing
+              </button>
+              <div class="form-group">
+                <label for="name"><strong>Name:*</strong></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  value="Ravitheja Dandi"
+                />
+              </div>
+              <div class="form-group">
+                <label for="pronouns"><strong>Pronouns:</strong></label>
+                <select class="form-control form-select">
+                  <option value="none">None</option>
+                  <option value="none">He/Him</option>
+                  <option value="none">She/Her</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="title"><strong>Title:</strong></label>
+                <textarea class="form-control" cols="20" rows="5"></textarea>
+              </div>
+              <div style="margin-top: 20px">
+                <h3>Contact</h3>
+                <p>
+                  No registered services, you can add some on the
+                  <a href="#" style="color: #b52828">settings</a>
+                  page.
+                </p>
+              </div>
+              <div class="form-group">
+                <h3>
+                  <label for="biography">Biography</label>
+                </h3>
+                <textarea class="form-control" cols="20" rows="5">
+                  Currently pursuing Master's in Computer Science in Khoury College of Computer Sciences. I worked as Site Reliability Engineer before.
+                  </textarea
                 >
-                  <i class="fa-solid fa-pencil"></i>Edit Profile
+              </div>
+
+              <div style="margin-top: 20px">
+                <h3>Links</h3>
+
+                <div class="row">
+                  <div class="col">
+                    <h6 style="align-items: center">Title</h6>
+                    <input type="text" class="form-control" value="Linkenin" />
+                  </div>
+                  ->
+                  <div class="col">
+                    <h6 style="align-items: center">URL</h6>
+                    <div class="d-inline-flex">
+                      <input
+                        type="text"
+                        class="form-control"
+                        value="https://www.linkedin.com/in/ravithejadandi/"
+                      />
+                      <i
+                        class="fa-solid fa-x"
+                        style="color: #b52828; margin: 10px 5px"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <button class="btn" style="background: #eeeeee">
+                  Add Another Link
                 </button>
-              </form>
-            </div>
-            <h3>Contact</h3>
-            <p>
-              No registered services, you can add some on the
-              <a href="#" style="color: #b52828">settings</a>
-              page.
-            </p>
-            <h3>Biography</h3>
-            <p>
-              Currently pursuing Master's in Computer Science in Khoury College of Computer Sciences. I worked as Site Reliability Engineer before.
-            </p>
-            <h3>Links</h3>
-            <p>
-              <i class="fa-solid fa-link" style="margin-right: 10px"></i
-              ><a
-                href="https://www.linkedin.com/in/ravithejadandi/"
-                style="text-decoration: none"
-                ><span style="color: #b52828">Linkedin</span>
-                <i
-                  class="fa-solid fa-arrow-up-right-from-square"
-                  style="color: #b52828"
-                ></i
-              ></a>
-            </p>
+                <br />
+                <hr />
+              </div>
+              <button class="btn">Cancel</button>
+              <button class="btn btn-danger">Save Profile</button>
+            </form>
           </div>
+          <div></div>
         </div>
       </div>
     </div>

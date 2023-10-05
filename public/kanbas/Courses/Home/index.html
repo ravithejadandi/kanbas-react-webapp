@@ -30,8 +30,27 @@
   crossorigin="anonymous"
 ></script>
 
+<div class="d-block d-md-none">
+  <div class="wd-flex-row-container">
+    <div class="wd-flex-grow-1" style="background-color: black">
+      <div class="d-flex">
+        <i
+          class="fa fa-bars"
+          style="color: #ffffff; margin-left: 10px; margin-top: 12px"
+        ></i>
+        <p style="color: white; margin-left: 25%; margin-top: 8px">
+          CS 5610.12631.202410
+        </p>
+        <div class="float-end" style="margin-left: 22%">
+          <i class="fa fa-glasses" style="color: white; margin-top: 12px"></i>
+          <i class="fa fa-chevron-down" style="color: white"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="wd-flex-row-container">
-  <div class="kanbasNav">
+  <div class="kanbasNav d-none d-md-block">
     <ul class="wd-kanbas-navigation">
       <div class="wd-logo-container">
         <a href="#"><img src="../../../images/NULogo.png" class="wd-logo" /></a>
@@ -90,29 +109,28 @@
   </div>
   <div class="wd-flex-grow-1">
     <div class="navigation-bar">
-      <nav style="--bs-breadcrumb-divider: '>'" class="wd-breadcrumb">
-        <ol class="breadcrumb" style="margin-left: 20px; margin-top: 15px">
+      <nav
+        style="--bs-breadcrumb-divider: '>'"
+        class="wd-breadcrumb d-none d-md-block"
+      >
+        <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <i
-              class="fa fa-bars"
-              style="color: #b52828; margin-right: 10px"
-            ></i>
-            <a href="#" style="color: #b52828; text-decoration: none"
-              >CS 5610.12631.202410</a
-            >
+            <i class="fa fa-bars" style="color: #b52828"></i>
+            <a href="#" style="color: #b52828">CS 5610.12631.202410</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">Modules</li>
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+          <button class="btn" style="background: #eeeeee; margin-left: 1100px">
+            <i class="fa-solid fa-glasses"></i>Student View
+          </button>
         </ol>
       </nav>
       <hr style="margin-left: 20px; margin-right: 20px" />
     </div>
     <div class="wd-flex-row-container">
       <div class="d-flex courseNav">
-        <ul class="wd-course-navigation">
-          <li><a href="/Kanbas/Courses/Home">Home</a></li>
-          <li class="wd-active">
-            <a href="/Kanbas/Courses/Modules">Modules</a>
-          </li>
+        <ul class="wd-course-navigation d-none d-md-block">
+          <li class="wd-active"><a href="/Kanbas/Courses/Home">Home</a></li>
+          <li><a href="/Kanbas/Courses/Modules">Modules</a></li>
           <li><a href="#">Piazza</a></li>
           <li><a href="#">Zoom Meetings</a></li>
           <li>
@@ -133,7 +151,10 @@
           <li><a href="/Kanbas/Courses/Settings">Settings</a></li>
         </ul>
       </div>
-      <div class="wd-flex-grow-1" style="margin-left: 30px">
+      <div
+        class="wd-flex-grow-1"
+        style="margin-left: 30px; margin-bottom: 20px"
+      >
         <div class="d-flex float-end main-content-control">
           <button class="btn" style="background: #eeeeee">Collapse All</button>
           <button class="btn" style="background: #eeeeee">View Progress</button>
@@ -147,11 +168,7 @@
               aria-expanded="false"
               style="background: #eeeeee"
             >
-              <i
-                class="fa-regular fa-circle-check"
-                style="color: green; margin-right: 3px"
-              ></i
-              >Publish All
+              <i class="fa-regular fa-circle-check"></i>Publish All
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="#">Publish All</a>
@@ -163,7 +180,7 @@
           </div>
 
           <button class="btn btn-danger">
-            <i class="fa fa-plus" style="margin-right: 1px"></i>Module
+            <i class="fa fa-plus" style="margin-right: 3px"></i>Module
           </button>
           <button class="btn" style="background: #eeeeee; height: 38px">
             <i class="fa-solid fa-ellipsis-vertical"></i>
@@ -171,18 +188,12 @@
         </div>
         <br />
         <hr />
-        <ul
-          class="wd-flex-grow-1 list-group module-list"
-          style="border-radius: 0"
-        >
+        <ul class="list-group module-list">
           <li class="list-group-item list-group-item-secondary">
             <i class="fa fa-grip-vertical" style="margin-right: 5px"></i>
             <strong>Week 0 - Intro</strong>
             <div class="float-end">
-              <i
-                class="fa-solid fa-circle-check"
-                style="color: rgb(3, 133, 3)"
-              ></i>
+              <i class="fa-solid fa-circle-check"></i>
               <i class="fa fa-ellipsis-v"></i>
             </div>
           </li>
@@ -191,10 +202,7 @@
               <i class="fa fa-grip-vertical" style="margin-right: 5px"></i>
               <strong>LEARNING OBJECTIVES</strong>
               <div class="float-end">
-                <i
-                  class="fa-solid fa-circle-check"
-                  style="color: rgb(3, 133, 3)"
-                ></i>
+                <i class="fa-solid fa-circle-check"></i>
                 <i class="fa fa-ellipsis-v"></i>
               </div>
             </li>
@@ -203,10 +211,7 @@
                 <i class="fa fa-grip-vertical" style="margin-right: 40px"></i>
                 Introduction to the Course
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
@@ -214,10 +219,7 @@
                 <i class="fa fa-grip-vertical" style="margin-right: 40px"></i>
                 Learn what is Web Development
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
@@ -225,10 +227,7 @@
                 <i class="fa fa-grip-vertical" style="margin-right: 40px"></i>
                 Creating a development environment
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
@@ -236,10 +235,7 @@
                 <i class="fa fa-grip-vertical" style="margin-right: 40px"></i>
                 Creating a web application
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
@@ -247,10 +243,7 @@
                 <i class="fa fa-grip-vertical" style="margin-right: 40px"></i>
                 Getting started with the first assignment
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
@@ -259,10 +252,7 @@
               <i class="fa fa-grip-vertical" style="margin-right: 5px"></i>
               <strong>READING</strong>
               <div class="float-end">
-                <i
-                  class="fa-solid fa-circle-check"
-                  style="color: rgb(3, 133, 3)"
-                ></i>
+                <i class="fa-solid fa-circle-check"></i>
                 <i class="fa fa-ellipsis-v"></i>
               </div>
             </li>
@@ -271,10 +261,7 @@
                 <i class="fa fa-grip-vertical" style="margin-right: 40px"></i>
                 Full Stack Developer - Chapter 1 - Introduction
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
@@ -283,10 +270,7 @@
                 Full Stack Developer - Chapter 2 - Creating User Interfaces with
                 HTML
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
@@ -295,65 +279,53 @@
               <i class="fa fa-grip-vertical" style="margin-right: 5px"></i>
               <strong>SLIDES</strong>
               <div class="float-end">
-                <i
-                  class="fa-solid fa-circle-check"
-                  style="color: rgb(3, 133, 3)"
-                ></i>
+                <i class="fa-solid fa-circle-check"></i>
                 <i class="fa fa-ellipsis-v"></i>
               </div>
             </li>
             <ul class="list-group" style="border-radius: 0">
               <li class="list-group-item">
                 <i class="fa fa-grip-vertical" style="margin-right: 10px"></i>
-                <i class="fa fa-link" style="color: rgb(3, 133, 3)"></i>
+                <i class="fa fa-link"></i>
                 <span style="color: #b52828">
-                  <a href="#" style="text-decoration: none; color: #b52828"
+                  <a href="#" style="color: #b52828"
                     >Introduction to Web Development</a
                   >
                   <i class="fa-solid fa-file-export"></i>
                 </span>
 
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
               <li class="list-group-item">
                 <i class="fa fa-grip-vertical" style="margin-right: 10px"></i>
-                <i class="fa fa-link" style="color: rgb(3, 133, 3)"></i>
+                <i class="fa fa-link"></i>
                 <span style="color: #b52828">
-                  <a href="#" style="text-decoration: none; color: #b52828"
+                  <a href="#" style="color: #b52828"
                     >Creating a HTTP Server with Node.js</a
                   >
                   <i class="fa-solid fa-file-export"></i>
                 </span>
 
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
               <li class="list-group-item">
                 <i class="fa fa-grip-vertical" style="margin-right: 10px"></i>
-                <i class="fa fa-link" style="color: rgb(3, 133, 3)"></i>
+                <i class="fa fa-link"></i>
                 <span style="color: #b52828">
-                  <a href="#" style="text-decoration: none; color: #b52828"
+                  <a href="#" style="color: #b52828"
                     >Creating a react application</a
                   >
                   <i class="fa-solid fa-file-export"></i>
                 </span>
 
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
@@ -363,10 +335,7 @@
             <i class="fa fa-grip-vertical" style="margin-right: 5px"></i>
             <strong>Week 1 - HTML</strong>
             <div class="float-end">
-              <i
-                class="fa-solid fa-circle-check"
-                style="color: rgb(3, 133, 3)"
-              ></i>
+              <i class="fa-solid fa-circle-check"></i>
               <i class="fa fa-ellipsis-v"></i>
             </div>
           </li>
@@ -375,10 +344,7 @@
               <i class="fa fa-grip-vertical" style="margin-right: 5px"></i>
               <strong>LEARNING OBJECTIVES</strong>
               <div class="float-end">
-                <i
-                  class="fa-solid fa-circle-check"
-                  style="color: rgb(3, 133, 3)"
-                ></i>
+                <i class="fa-solid fa-circle-check"></i>
                 <i class="fa fa-ellipsis-v"></i>
               </div>
             </li>
@@ -387,10 +353,7 @@
                 <i class="fa fa-grip-vertical" style="margin-right: 40px"></i>
                 Learn how to create user interfaces with HTML
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
@@ -398,10 +361,7 @@
                 <i class="fa fa-grip-vertical" style="margin-right: 40px"></i>
                 Keep working on Assignment 1
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
@@ -409,10 +369,7 @@
                 <i class="fa fa-grip-vertical" style="margin-right: 40px"></i>
                 Deploy the assignment to Netlify
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
@@ -421,10 +378,7 @@
               <i class="fa fa-grip-vertical" style="margin-right: 5px"></i>
               <strong>READING</strong>
               <div class="float-end">
-                <i
-                  class="fa-solid fa-circle-check"
-                  style="color: rgb(3, 133, 3)"
-                ></i>
+                <i class="fa-solid fa-circle-check"></i>
                 <i class="fa fa-ellipsis-v"></i>
               </div>
             </li>
@@ -433,10 +387,7 @@
                 <i class="fa fa-grip-vertical" style="margin-right: 40px"></i>
                 Full Stack Developer - Chapter 1 - Introduction
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
@@ -445,10 +396,7 @@
                 Full Stack Developer - Chapter 2 - Creating User Interfaces with
                 HTML
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
@@ -457,101 +405,79 @@
               <i class="fa fa-grip-vertical" style="margin-right: 5px"></i>
               <strong>SLIDES</strong>
               <div class="float-end">
-                <i
-                  class="fa-solid fa-circle-check"
-                  style="color: rgb(3, 133, 3)"
-                ></i>
+                <i class="fa-solid fa-circle-check"></i>
                 <i class="fa fa-ellipsis-v"></i>
               </div>
             </li>
             <ul class="list-group" style="border-radius: 0">
               <li class="list-group-item">
                 <i class="fa fa-grip-vertical" style="margin-right: 10px"></i>
-                <i class="fa fa-link" style="color: rgb(3, 133, 3)"></i>
+                <i class="fa fa-link"></i>
                 <span style="color: #b52828">
-                  <a href="#" style="text-decoration: none; color: #b52828"
+                  <a href="#" style="color: #b52828"
                     >Introduction to HTML and the DOM</a
                   >
                   <i class="fa-solid fa-file-export"></i>
                 </span>
 
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
               <li class="list-group-item">
                 <i class="fa fa-grip-vertical" style="margin-right: 10px"></i>
-                <i class="fa fa-link" style="color: rgb(3, 133, 3)"></i>
+                <i class="fa fa-link"></i>
                 <span style="color: #b52828">
-                  <a href="#" style="text-decoration: none; color: #b52828"
+                  <a href="#" style="color: #b52828"
                     >Formatting Web content with Headings and Paragraphs</a
                   >
                   <i class="fa-solid fa-file-export"></i>
                 </span>
 
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
               <li class="list-group-item">
                 <i class="fa fa-grip-vertical" style="margin-right: 10px"></i>
-                <i class="fa fa-link" style="color: rgb(3, 133, 3)"></i>
+                <i class="fa fa-link"></i>
                 <span style="color: #b52828">
-                  <a href="#" style="text-decoration: none; color: #b52828"
+                  <a href="#" style="color: #b52828"
                     >Formatting content with Lists and Tables</a
                   >
                   <i class="fa-solid fa-file-export"></i>
                 </span>
 
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
               <li class="list-group-item">
                 <i class="fa fa-grip-vertical" style="margin-right: 10px"></i>
-                <i class="fa fa-link" style="color: rgb(3, 133, 3)"></i>
+                <i class="fa fa-link"></i>
                 <span style="color: #b52828">
-                  <a href="#" style="text-decoration: none; color: #b52828"
-                    >Creating Web Forms</a
-                  >
+                  <a href="#" style="color: #b52828">Creating Web Forms</a>
                   <i class="fa-solid fa-file-export"></i>
                 </span>
 
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
               <li class="list-group-item">
                 <i class="fa fa-grip-vertical" style="margin-right: 10px"></i>
-                <i class="fa fa-link" style="color: rgb(3, 133, 3)"></i>
+                <i class="fa fa-link"></i>
                 <span style="color: #b52828">
-                  <a href="#" style="text-decoration: none; color: #b52828"
-                    >Navigating with Anchors</a
-                  >
+                  <a href="#" style="color: #b52828">Navigating with Anchors</a>
                   <i class="fa-solid fa-file-export"></i>
                 </span>
 
                 <div class="float-end">
-                  <i
-                    class="fa-solid fa-circle-check"
-                    style="color: rgb(3, 133, 3)"
-                  ></i>
+                  <i class="fa-solid fa-circle-check"></i>
                   <i class="fa fa-ellipsis-v"></i>
                 </div>
               </li>
@@ -571,12 +497,7 @@
         <button class="btn" style="background: #82be5d">
           <i
             class="fa-regular fa-circle-check"
-            style="
-              color: green;
-              background: white;
-              border-radius: 50%;
-              margin-right: 3px;
-            "
+            style="background: white; border-radius: 50%; margin-right: 3px"
           ></i
           >Published
         </button>
@@ -632,9 +553,7 @@
             Coming Up
             <div class="float-end">
               <i class="fa fa-calendar"></i>
-              <a
-                href="#"
-                style="color: #b52828; font-size: 15px; text-decoration: none"
+              <a href="#" style="color: #b52828; font-size: 15px"
                 >View Calendar</a
               >
             </div>
@@ -646,9 +565,7 @@
         <ul style="list-style: none">
           <li>
             <i class="fa fa-calendar"></i>
-            <a href="#" style="text-decoration: none; color: #b52828"
-              >Lecture</a
-            >
+            <a href="#" style="color: #b52828">Lecture</a>
             <p style="margin-left: 20px; font-size: 15px; color: grey">
               CS 4550.12631.202410
             </p>
@@ -665,9 +582,7 @@
           </li>
           <li>
             <i class="fa fa-calendar"></i>
-            <a href="#" style="text-decoration: none; color: #b52828"
-              >CS 5610 06 SP23 Lecture</a
-            >
+            <a href="#" style="color: #b52828">CS 5610 06 SP23 Lecture</a>
             <p style="margin-left: 20px; font-size: 15px; color: grey">
               CS 5610.12631.202410
             </p>
@@ -684,7 +599,7 @@
           </li>
           <li>
             <i class="fa fa-calendar"></i>
-            <a href="#" style="text-decoration: none; color: #b52828"
+            <a href="#" style="color: #b52828"
               >CS 5610 Web Development Lecture</a
             >
             <p style="margin-left: 20px; font-size: 15px; color: grey">
