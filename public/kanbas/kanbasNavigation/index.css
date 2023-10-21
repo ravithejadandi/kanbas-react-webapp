@@ -42,13 +42,3 @@
   margin-bottom: 8px;
   text-align: center;
 }
-
-.wd-kanbas-navigation > li > a:hover {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.wd-course-navigation > li > a:hover {
-  text-decoration: none;
-  color: #b52828;
-}
