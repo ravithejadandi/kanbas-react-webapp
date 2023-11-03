@@ -2,7 +2,7 @@ import { Link, useParams, useLocation } from 'react-router-dom';
 import styles from './index.module.css';
 
 const CourseNavigation = () => {
-  const hrefs = [
+  const links = [
     'Home',
     'Modules',
     'Piazza',
@@ -27,10 +27,10 @@ const CourseNavigation = () => {
   return (
     <div>
       <ul className={`d-none d-md-block ${styles.wd_course_navigation}`}>
-        {hrefs.map((href, index) => (
-          <li className={`${pathname.includes(href) && styles.active}`}>
-            <Link key={index} to={`/Kanbas/Courses/${courseId}/${href}`}>
-              {href}
+        {links.map((link, index) => (
+          <li className={`${pathname.includes(link) && styles.active}`}>
+            <Link key={index} to={`/Kanbas/Courses/${courseId}/${link}`}>
+              {link}
             </Link>
           </li>
         ))}
