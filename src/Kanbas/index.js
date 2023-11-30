@@ -14,6 +14,8 @@ import store from './store';
 import { Provider } from 'react-redux';
 import axios from 'axios';
 
+const API_BASE = process.env.REACT_APP_API_BASE;
+
 function Kanbas() {
   const [courses, setCourses] = useState([]);
   const URL = `${API_BASE}/courses`;
